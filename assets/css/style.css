@@ -1,0 +1,187 @@
+:root {
+    --primary-navy: #0a2558;
+    --navy-footer: #0c2b51;
+    --light-navy: #eef3fc;
+    --light-gray: #f8f9fa;
+    --text-dark: #333333;
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+}
+
+.text-navy {
+    color: var(--primary-navy) !important;
+}
+
+.bg-navy {
+    background-color: var(--primary-navy) !important;
+    color: #fff;
+}
+
+.bg-light-navy {
+    background-color: var(--light-navy) !important;
+}
+
+.bg-navy-footer {
+    background-color: var(--navy-footer) !important;
+}
+
+.btn-navy {
+    background-color: var(--primary-navy);
+    color: #fff;
+    border: none;
+}
+
+.btn-navy:hover {
+    background-color: #06183d;
+    color: #fff;
+}
+
+.btn-outline-navy {
+    background-color: transparent;
+    color: var(--primary-navy);
+    border: 2px solid var(--primary-navy);
+}
+
+.btn-outline-navy:hover {
+    background-color: var(--primary-navy);
+    color: #fff;
+}
+
+.hero-section {
+    position: relative;
+    background: url('../images/hero.png') no-repeat center center/cover;
+    height: 600px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 45%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.ekshover {
+    transition: all 0.3s ease;
+}
+
+.ekshover:hover,
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .15) !important;
+    border-color: var(--primary-navy) !important;
+}
+
+.ekshover:hover .text-navy {
+    color: #0d6efd !important;
+}
+
+.hover-card {
+    transition: all 0.3s ease;
+}
+
+.hover-link {
+    transition: color 0.2s;
+}
+
+.hover-link:hover {
+    color: var(--primary-navy) !important;
+    text-decoration: underline !important;
+}
+
+/* Override hover color for links in dark footer to ensure visibility */
+.bg-navy-footer .hover-link:hover,
+footer .hover-link:hover {
+    color: var(--light-navy) !important; /* Terang agar terbaca */
+}
+
+/* Navbar Spacing for Desktop UI/UX Focus */
+@media (min-width: 992px) {
+    .navbar-nav {
+        gap: 1rem;
+        /* 1rem gap for breathability */
+    }
+}
+
+/* Image Utilities */
+.img-guru {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: -45px;
+    background-color: #fff;
+}
+
+.berita-img {
+    height: 180px;
+    /* Better height for news images */
+    object-fit: cover;
+}
+
+/* Carousel arrows and hide scrollbar */
+.btn-carousel {
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.btn-carousel:hover {
+    transform: translateY(-50%) scale(1.1) !important;
+    /* using !important to preserve the bootstrap top-50 translate logic but add scale */
+    opacity: 1;
+}
+
+#guru-container {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+/* Fix for mobile where row-cols-1 forces 100% width */
+#guru-container>.col {
+    flex: 0 0 auto;
+    width: 260px !important;
+    max-width: 100%;
+    scroll-snap-align: center;
+}
+
+@media (max-width: 767.98px) {
+    #guru-container>.col {
+        width: 100% !important;
+    }
+
+    #guru-prev {
+        left: 0px !important;
+    }
+
+    #guru-next {
+        right: 0px !important;
+    }
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}

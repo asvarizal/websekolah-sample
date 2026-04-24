@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - SMA Cendekia Nusantara</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+    <meta name="description"
+        content="Hubungi SMA Cendekia Nusantara untuk informasi pendaftaran, kerjasama, atau panduan sekolah kami.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- JSON-LD EducationalOrganization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "SMA Cendekia Nusantara",
+      "description": "Sekolah menengah atas yang berkomitmen mewujudkan generasi unggul, berkarakter, dan berprestasi melalui pendidikan berkualitas.",
+      "url": "https://smacendekiannusantara.sch.id",
+      "logo": "https://smacendekiannusantara.sch.id/assets/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Pendidikan No. 10 Cerdas Raya",
+        "addressLocality": "Kota Serang",
+        "addressRegion": "Banten",
+        "postalCode": "42112",
+        "addressCountry": "ID"
+      },
+      "telephone": "(0254) 123456",
+      "email": "info@smacendekia.sch.id"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="sticky-top z-3 position-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo SMA Cendekia Nusantara" height="40" class="me-2"
+                        onerror="this.src='https://via.placeholder.com/40';">
+                    <span class="fw-bold text-navy h5 mb-0">SMA Cendekia Nusantara</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium text-dark">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                                <li><a class="dropdown-item" href="visi-misi.html">Visi Misi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guru.html">Guru</a></li>
+                        <li class="nav-item"><a class="nav-link active text-navy border-bottom border-2 border-navy"
+                                href="kontak.html">Kontak</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-navy px-4 rounded-pill fw-semibold">PPDB</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="py-5 bg-white min-vh-100">
+            <div class="container py-lg-4">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb mb-0 small">
+                        <li class="breadcrumb-item"><a href="index.html"
+                                class="text-decoration-none text-muted hover-link">Beranda</a></li>
+                        <li class="breadcrumb-item active fw-bold text-navy" aria-current="page">Kontak</li>
+                    </ol>
+                </nav>
+
+                <div class="text-center mb-5 pb-4">
+                    <h1 class="display-6 fw-bold text-navy mb-3">Hubungi Kami</h1>
+                    <p class="text-muted lead mx-auto" style="max-width: 700px;">Jangan ragu untuk menghubungi kami jika
+                        ada pertanyaan mengenai sistem pendaftaran, kurikulum, maupun kemitraan.</p>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Form Kontak -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-md-5 p-4 bg-light-navy h-100">
+                            <h2 class="h4 fw-bold text-navy mb-4">Kirim Pesan</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="namaLengkap" class="form-label text-muted small fw-bold">Nama
+                                        Lengkap</label>
+                                    <input type="text" class="form-control rounded-3 border-0 shadow-sm py-2"
+                                        id="namaLengkap" placeholder="Masukkan nama Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="alamatEmail" class="form-label text-muted small fw-bold">Alamat
+                                        Email</label>
+                                    <input type="email" class="form-control rounded-3 border-0 shadow-sm py-2"
+                                        id="alamatEmail" placeholder="nama@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subjekPesan" class="form-label text-muted small fw-bold">Subjek</label>
+                                    <select class="form-select rounded-3 border-0 shadow-sm py-2" id="subjekPesan">
+                                        <option selected>Pilih subjek...</option>
+                                        <option value="1">Informasi PPDB</option>
+                                        <option value="2">Kunjungan Sekolah</option>
+                                        <option value="3">Kerjasama / Kemitraan</option>
+                                        <option value="4">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="isiPesan" class="form-label text-muted small fw-bold">Pesan Anda</label>
+                                    <textarea class="form-control rounded-3 border-0 shadow-sm py-2" id="isiPesan"
+                                        rows="5" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-navy py-2 px-4 rounded-3 w-100 fw-bold hover-card">Kirim Pesan <i
+                                        class="bi bi-send ms-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Peta & Info -->
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column h-100">
+                            <!-- Info -->
+                            <div class="row g-4 mb-4">
+                                <div class="col-sm-6">
+                                    <div class="d-flex gap-3 align-items-start">
+                                        <div class="bg-navy text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm"
+                                            style="width: 45px; height: 45px;">
+                                            <i class="bi bi-geo-alt fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="h6 fw-bold text-navy mb-1">Alamat</h3>
+                                            <p class="text-muted small mb-0">Jl. Pendidikan No. 10, Cerdas Raya, Kota
+                                                Serang, Banten 42112</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex gap-3 align-items-start mb-4">
+                                        <div class="bg-navy text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm"
+                                            style="width: 45px; height: 45px;">
+                                            <i class="bi bi-telephone fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="h6 fw-bold text-navy mb-1">Telepon</h3>
+                                            <p class="text-muted small mb-0">(0254) 123456</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-start">
+                                        <div class="bg-navy text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm"
+                                            style="width: 45px; height: 45px;">
+                                            <i class="bi bi-envelope fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="h6 fw-bold text-navy mb-1">Email</h3>
+                                            <p class="text-muted small mb-0">info@smacendekia.sch.id</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Peta -->
+                            <div class="flex-grow-1 border rounded-4 overflow-hidden shadow-sm"
+                                style="min-height: 300px;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.08620242273!2d106.07129530491022!3d-6.115858686151756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418ca12850ed4d%3A0xe67cb56a42a22cc4!2sSerang%2C%20Serang%20City%2C%20Banten!5e0!3m2!1sen!2sid!4v1709477028135!5m2!1sen!2sid"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 bg-navy-footer">
+        <div class="container">
+            <div class="row g-4 border-bottom border-secondary pb-4 mb-3">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 pe-lg-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/logo.png" alt="Logo Footer SMA Cendekia Nusantara" height="50"
+                            class="me-3 bg-white rounded p-1" onerror="this.src='https://via.placeholder.com/50';">
+                        <h2 class="h5 fw-bold mb-0">SMA Cendekia Nusantara</h2>
+                    </div>
+                    <p class="text-light small lh-lg opacity-75">Sekolah menengah atas yang berkomitmen mewujudkan
+                        generasi unggul, berkarakter, dan berprestasi melalui pendidikan berkualitas dan lingkungan yang
+                        inspiratif.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Website"><i class="bi bi-globe"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Link Cepat</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li><a href="index.html" class="text-white text-decoration-none hover-link">Beranda</a></li>
+                        <li><a href="sejarah.html" class="text-white text-decoration-none hover-link">Profil Sekolah</a>
+                        </li>
+                        <li><a href="berita.html" class="text-white text-decoration-none hover-link">Berita</a></li>
+                        <li><a href="ekstrakurikuler.html"
+                                class="text-white text-decoration-none hover-link">Ekstrakurikuler</a></li>
+                        <li><a href="guru.html" class="text-white text-decoration-none hover-link">Guru</a></li>
+                        <li><a href="kontak.html" class="text-white text-decoration-none hover-link">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Informasi</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li><a href="#" class="text-white text-decoration-none hover-link">PPDB</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Kalender Akademik</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Kurikulum</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Galeri</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Unduhan</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Pengumuman</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Kontak Kami</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                            <span>Jl. Pendidikan No. 10, Cerdas Raya, Kota Serang, Banten 42112</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone fs-5"></i>
+                            <span>(0254) 123456</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-envelope fs-5"></i>
+                            <span>info@smacendekia.sch.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center small opacity-75">
+                &copy; 2024 SMA Cendekia Nusantara. Semua Hak Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

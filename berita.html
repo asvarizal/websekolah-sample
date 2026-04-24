@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita & Artikel - SMA Cendekia Nusantara</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+    <meta name="description"
+        content="Kumpulan berita terbaru, informasi penting, dan artikel seputar SMA Cendekia Nusantara.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="sticky-top z-3 position-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo SMA Cendekia Nusantara" height="40" class="me-2"
+                        onerror="this.src='https://via.placeholder.com/40';">
+                    <span class="fw-bold text-navy h5 mb-0">SMA Cendekia Nusantara</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium text-dark">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                                <li><a class="dropdown-item" href="visi-misi.html">Visi Misi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active text-navy border-bottom border-2 border-navy"
+                                href="berita.html">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guru.html">Guru</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-navy px-4 rounded-pill fw-semibold">PPDB</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="py-5 bg-light min-vh-100">
+            <div class="container py-lg-4">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb mb-0 small">
+                        <li class="breadcrumb-item"><a href="index.html"
+                                class="text-decoration-none text-muted hover-link">Beranda</a></li>
+                        <li class="breadcrumb-item active fw-bold text-navy" aria-current="page">Berita & Artikel</li>
+                    </ol>
+                </nav>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                    <div>
+                        <h1 class="h3 fw-bold text-navy mb-2">Berita & Artikel</h1>
+                        <p class="text-muted mb-0">Temukan informasi dan kegiatan terbaru dari sekolah kami.</p>
+                    </div>
+                    <div class="mt-4 mt-md-0 position-relative">
+                        <input type="text" class="form-control rounded-pill pe-5 shadow-sm border-0 py-2"
+                            placeholder="Cari berita..." style="width: 300px;">
+                        <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                    </div>
+                </div>
+
+                <!-- Grid Berita -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                    <!-- Artikel 1 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Siswa belajar di kelas">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Akademik</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="detail-berita.html"
+                                        class="text-navy text-decoration-none hover-link">SMA Cendekia Nusantara
+                                        Terapkan Kurikulum Baru</a></h2>
+                                <p class="card-text text-muted small">Tahun ajaran ini sekolah mulai mengimplementasikan
+                                    kurikulum merdeka untuk mengasah potensi minat dan bakat secara holistik.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 10 Mei 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artikel 2 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Kegiatan Ekstrakurikuler">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Kegiatan</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="#"
+                                        class="text-navy text-decoration-none hover-link">Pekan Olahraga Antar Kelas
+                                        Semarakkan Semester Baru</a></h2>
+                                <p class="card-text text-muted small">Siswa sangat antusias mengikuti berbagai
+                                    perlombaan olahraga persahabatan antar kelas selama sepekan penuh.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 05 Mei 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artikel 3 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Workshop Guru">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Guru</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="#"
+                                        class="text-navy text-decoration-none hover-link">Workshop Literasi Digital bagi
+                                        Tenaga Pengajar</a></h2>
+                                <p class="card-text text-muted small">Seluruh guru mengikuti pelatihan penggunaan
+                                    aplikasi berbasis AI untuk menunjang proses pembelajaran yang efektif dan efisien.
+                                </p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 28 April 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artikel 4 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Kelulusan Siswa">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Akademik</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="#"
+                                        class="text-navy text-decoration-none hover-link">Persiapan Jelang Ujian Akhir
+                                        Semester Dimulai</a></h2>
+                                <p class="card-text text-muted small">Panduan dan jam tambahan telah disiapkan oleh
+                                    pihak kurikulum untuk membantu siswa menghadapi PAS.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 20 April 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artikel 5 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Pentas Seni">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Seni & Budaya</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="#"
+                                        class="text-navy text-decoration-none hover-link">Festival Seni Pelajar Tingkat
+                                        Kabupaten</a></h2>
+                                <p class="card-text text-muted small">Berbagai karya seni dari klub teater dan lukis
+                                    ditampilkan dengan sangat memukau pada ajang Festival Seni Pelajar.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 15 April 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artikel 6 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600&h=400"
+                                class="card-img-top berita-img" alt="Kerjasama Antar Sekolah">
+                            <div class="card-body p-4">
+                                <span class="badge bg-light-navy text-navy rounded-pill mb-3">Humas</span>
+                                <h2 class="h5 fw-bold mb-3"><a href="#"
+                                        class="text-navy text-decoration-none hover-link">Kunjungan Studi Banding dari
+                                        SMA Favorit</a></h2>
+                                <p class="card-text text-muted small">SMA Cendekia Nusantara mendapat kehormatan
+                                    menerima kunjungan dari sekolah sahabat guna bertukar informasi sistem mengajar.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-0 px-4 pb-4 pt-0 d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 02 April 2024</small>
+                                <a href="detail-berita.html"
+                                    class="text-navy fw-bold text-decoration-none small hover-link">Baca <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation" class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link border-0 rounded-circle me-2 shadow-sm" href="#" tabindex="-1"
+                                aria-disabled="true"><i class="bi bi-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item"><a
+                                class="page-link border-0 rounded-circle me-2 shadow-sm text-white bg-navy"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link border-0 rounded-circle me-2 shadow-sm text-navy"
+                                href="#">2</a></li>
+                        <li class="page-item"><a class="page-link border-0 rounded-circle me-2 shadow-sm text-navy"
+                                href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link border-0 rounded-circle shadow-sm text-navy" href="#"><i
+                                    class="bi bi-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 bg-navy-footer">
+        <div class="container">
+            <div class="row g-4 border-bottom border-secondary pb-4 mb-3">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 pe-lg-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/logo.png" alt="Logo Footer SMA Cendekia Nusantara" height="50"
+                            class="me-3 bg-white rounded p-1" onerror="this.src='https://via.placeholder.com/50';">
+                        <h2 class="h5 fw-bold mb-0">SMA Cendekia Nusantara</h2>
+                    </div>
+                    <p class="text-light small lh-lg opacity-75">Sekolah menengah atas yang berkomitmen mewujudkan
+                        generasi unggul, berkarakter, dan berprestasi melalui pendidikan berkualitas dan lingkungan yang
+                        inspiratif.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center hover-card"
+                            style="width: 35px; height: 35px;" aria-label="Website"><i class="bi bi-globe"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Link Cepat</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li><a href="index.html" class="text-white text-decoration-none hover-link">Beranda</a></li>
+                        <li><a href="sejarah.html" class="text-white text-decoration-none hover-link">Profil Sekolah</a>
+                        </li>
+                        <li><a href="berita.html" class="text-white text-decoration-none hover-link">Berita</a></li>
+                        <li><a href="ekstrakurikuler.html"
+                                class="text-white text-decoration-none hover-link">Ekstrakurikuler</a></li>
+                        <li><a href="guru.html" class="text-white text-decoration-none hover-link">Guru</a></li>
+                        <li><a href="kontak.html" class="text-white text-decoration-none hover-link">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Informasi</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li><a href="#" class="text-white text-decoration-none hover-link">PPDB</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Kalender Akademik</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Kurikulum</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Galeri</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Unduhan</a></li>
+                        <li><a href="#" class="text-white text-decoration-none hover-link">Pengumuman</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
+                    <h3 class="h5 fw-bold mb-4">Kontak Kami</h3>
+                    <ul class="list-unstyled small d-flex flex-column gap-3 opacity-75">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                            <span>Jl. Pendidikan No. 10, Cerdas Raya, Kota Serang, Banten 42112</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone fs-5"></i>
+                            <span>(0254) 123456</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-envelope fs-5"></i>
+                            <span>info@smacendekia.sch.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center small opacity-75">
+                &copy; 2024 SMA Cendekia Nusantara. Semua Hak Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
